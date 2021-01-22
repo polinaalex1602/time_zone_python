@@ -35,7 +35,7 @@ class TimezoneTest(unittest.TestCase):
         payload = {
             "date": "12.20.2021 22:21:05",
             "tz": "Europe/Moscow",
-            "target_tz": "Asia/Novosibirsk"
+            "target_tz": "Asia/Tomsk"
             }
         response = requests.post(f'http://localhost:{self.port}/api/v1/convert', json=payload)
         input_dt = datetime.strptime(payload['date'], '%m.%d.%Y %H:%M:%S')
