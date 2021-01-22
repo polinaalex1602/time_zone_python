@@ -1,5 +1,5 @@
 import unittest
-import requests
+import request
 from app import timezones_app
 from wsgiref.simple_server import WSGIServer, WSGIRequestHandler
 import threading
